@@ -16,15 +16,32 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         include: APP_DIR,
-        loader: "babel-loader",
+        loader: "babel-loader"
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: "url-loader",
+            options: {
+              limit: 10 * 1024
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|svg)$/,
+        loader: "image-webpack-loader",
+        // Specify enforce: 'pre' to apply the loader
+        // before url-loader/svg-url-loader
+        // and not duplicate it in rules with them
+        enforce: "pre"
       }
     ]
   },
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin()
-  ]
+  plugins: [new webpack.optimize.UglifyJsPlugin()]
 };

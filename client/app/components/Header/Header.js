@@ -2,6 +2,7 @@ import React from "react";
 import Avatar from "material-ui/Avatar";
 import Grid from "material-ui/Grid";
 import withStyles from "material-ui/styles/withStyles";
+import profileImage from "./../../../public/images/profile.jpeg";
 
 const styles = {
   row: {
@@ -9,8 +10,6 @@ const styles = {
     justifyContent: "center"
   },
   profile: {
-    height: 150,
-    width: 150,
     margin: 5
   },
   divider: {
@@ -43,7 +42,7 @@ const Header = props => {
         <Grid className={classes.row} item xs={12}>
           <Avatar
             alt="Profile photo"
-            src="public/images/profile.jpeg"
+            src={profileImage}
             className={classes.profile}
           />
         </Grid>
