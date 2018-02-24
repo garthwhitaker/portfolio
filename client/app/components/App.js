@@ -9,6 +9,9 @@ import withStyles from "material-ui/styles/withStyles";
 const styles = {
   root: {
     flexGrow: 1
+  },
+  center: {
+    textAlign: 'center'
   }
 };
 
@@ -21,13 +24,13 @@ const App = props => {
       justify="center"
       alignItems="center"
     >
-      <Grid item xs={4} />
-      <Grid item xs={4}>
+      <Grid item xs={2} />
+      <Grid item xs={8} className={props.classes.center}>
         <Header />
         <Content />
         <Footer />
       </Grid>
-      <Grid item xs={4} />
+      <Grid item xs={2} />
     </Grid>
   );
 };

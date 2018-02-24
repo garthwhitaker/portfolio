@@ -16,12 +16,15 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         include: APP_DIR,
-        loader: "babel-loader"
+        loader: "babel-loader",
       },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       }
     ]
-  }
+  },
+  plugins: [
+    new webpack.optimize.UglifyJsPlugin()
+  ]
 };

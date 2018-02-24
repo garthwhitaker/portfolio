@@ -18,39 +18,38 @@ const styles = theme => ({
   },
   item: {
     fontFamily: '"Open Sans", sans-serif',
-    textAlign: "justify",
-    padding: 20
+    textAlign: "justify"
   }
 });
 
 const Content = props => {
   return (
-    <Grid container className={props.classes.row}>
-      <Grid container alignItems="center" direction="row" justify="center">
-        <Grid item xs={4} md={2}>
+    <Grid container>
+      <Grid container alignItems="center" direction="row" justify="center" className={props.classes.row}>
+        <Grid item xs={12} sm={4} md={2}>
           <LaptopMacIcon className={props.classes.icon} />
         </Grid>
-        <Grid item xs={8} md={10} className={props.classes.item}>
+        <Grid item xs={12} sm={8} md={10} className={props.classes.item}>
           For things I am currently working on or have worked on, check&nbsp;<a href="https://github.com/garthwhitaker">
             GitHub
           </a>.
         </Grid>
       </Grid>
-      <Grid container alignItems="center" direction="row" justify="center">
-        <Grid item xs={4} md={2}>
+      <Grid container alignItems="center" direction="row" justify="center" className={props.classes.row}> 
+        <Grid item xs={12} sm={4} md={2}>
           <AssigmentIcon className={props.classes.icon} />
         </Grid>
-        <Grid item xs={8} md={10} className={props.classes.item}>
+        <Grid item xs={12} sm={8} md={10} className={props.classes.item}>
           To read my latest blog posts, see&nbsp;<a href="http://www.garthwhitaker.co.za/blog">
             Blog
           </a>.
         </Grid>
       </Grid>
-      <Grid container alignItems="center" direction="row" justify="center">
-        <Grid item xs={4} md={2}>
+      <Grid container alignItems="center" direction="row" justify="center" className={props.classes.row}>
+        <Grid item xs={12} sm={4} md={2}>
           <PermIdentityIcon className={props.classes.icon} />
         </Grid>
-        <Grid item xs={8} md={10} className={props.classes.item}>
+        <Grid item xs={12} sm={8} md={10} className={props.classes.item}>
           My professional career in IT can be viewed on&nbsp;<a href="https://www.linkedin.com/in/garthwhitaker">
             LinkedIn
           </a>.
