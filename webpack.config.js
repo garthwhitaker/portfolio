@@ -23,7 +23,7 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.(png|jpg|jpeg|gif)$/,
+        test: /\.(png|jpe?g|gif)$/,
         use: [
           {
             loader: "url-loader",
@@ -34,7 +34,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(jpg|jpeg|png|gif|svg)$/,
+        test: /\.(jpe?g|png|gif|svg)$/,
         loader: "image-webpack-loader",
         // Specify enforce: 'pre' to apply the loader
         // before url-loader/svg-url-loader
