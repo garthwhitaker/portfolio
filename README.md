@@ -5,9 +5,9 @@ This is my portfolio site written with React
 ### Webpack
 
 - [ ] Webpack server not hot reloading after code changes
-- [ ] Bundle size to big
+- [x] Bundle size to big
 - [ ] Material UI Theme
 
 ### Project setup
-- [ ] Eslint
+- [x] Eslint
 - [ ] Lighthouse
