@@ -11,3 +11,9 @@ This is my portfolio site written with React
 ### Project setup
 - [x] Eslint
 - [ ] Lighthouse
+- [ ] Git hook for push
+- [ ] Docker local deploy
+- [ ] Jest 
+- [ ] Enzyme
+- [ ] Deploy to amazon via script
+- [ ] Deploy to digital ocean via script
