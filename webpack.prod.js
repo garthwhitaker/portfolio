@@ -1,9 +1,9 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const APP_DIR = path.resolve(__dirname, 'client/app');
-const BUILD_DIR = path.resolve(__dirname, 'dist');
+const BUILD_DIR = path.resolve(__dirname, 'client/public');
 
 module.exports = {
   entry: {
@@ -47,9 +47,18 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(BUILD_DIR),
+    new webpack.optimize.UglifyJsPlugin(),
     new HtmlWebpackPlugin({
       template: './client/index.html',
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      // A name of the chunk that will include the dependencies.
+      // This name is substituted in place of [name] from step 1
+      name: 'vendor',
+
+      // A function that determines which modules to include into this chunk
+      minChunks: module => module.context &&
+          module.context.includes('node_modules'),
     }),
   ],
 };

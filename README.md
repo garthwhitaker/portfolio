@@ -7,6 +7,8 @@ This is my portfolio site written with React
 - [ ] Webpack server not hot reloading after code changes
 - [x] Bundle size to big
 - [ ] Material UI Theme
+- [ ] Performance tweaks
+- [ ] Separate production config
 
 ### Project setup
 - [x] Eslint

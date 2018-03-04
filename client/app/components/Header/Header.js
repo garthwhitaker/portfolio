@@ -12,6 +12,8 @@ const styles = {
   },
   profile: {
     margin: 5,
+    width: 150,
+    height: 150,
   },
   divider: {
     marginTop: '1rem',
@@ -62,7 +64,13 @@ const Header = (props) => {
 };
 
 Header.propTypes = {
-  classes: PropTypes.string.isRequired,
+  classes: PropTypes.shape({
+    row: PropTypes.string.isRequired,
+    divider: PropTypes.string.isRequired,
+    h4: PropTypes.string.isRequired,
+    h1: PropTypes.string.isRequired,
+    profile: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default withStyles(styles)(Header);

@@ -29,7 +29,10 @@ const Footer = props => (
 );
 
 Footer.propTypes = {
-  classes: PropTypes.string.isRequired,
+  classes: PropTypes.shape({
+    row: PropTypes.string.isRequired,
+    divider: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default withStyles(styles)(Footer);

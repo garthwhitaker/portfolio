@@ -14,7 +14,7 @@ const styles = {
     textAlign: 'center',
   },
 };
-
+/** Main application component */
 const App = props => (
   <Grid
     container
@@ -34,7 +34,10 @@ const App = props => (
 );
 
 App.propTypes = {
-  classes: PropTypes.string.isRequired,
+  classes: PropTypes.shape({
+    root: PropTypes.string.isRequired,
+    center: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default withStyles(styles)(App);

@@ -80,7 +80,11 @@ const Content = props => (
 );
 
 Content.propTypes = {
-  classes: PropTypes.string.isRequired,
+  classes: PropTypes.shape({
+    row: PropTypes.string.isRequired,
+    icon: PropTypes.string.isRequired,
+    item: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default withStyles(styles)(Content);
