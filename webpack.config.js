@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const DashboardPlugin = require('webpack-dashboard/plugin');
 
 const APP_DIR = path.resolve(__dirname, 'client/app');
 const BUILD_DIR = path.resolve(__dirname, 'dist');
@@ -51,5 +52,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/index.html',
     }),
+    new DashboardPlugin(),
   ],
 };

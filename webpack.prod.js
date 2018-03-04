@@ -1,9 +1,11 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+
 
 const APP_DIR = path.resolve(__dirname, 'client/app');
-const BUILD_DIR = path.resolve(__dirname, 'client/public');
+const BUILD_DIR = path.resolve(__dirname, 'dist');
 
 module.exports = {
   entry: {
@@ -60,5 +62,6 @@ module.exports = {
       minChunks: module => module.context &&
           module.context.includes('node_modules'),
     }),
+    new BundleAnalyzerPlugin(),
   ],
 };
