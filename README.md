@@ -4,11 +4,11 @@ This is my portfolio site written with React
 ## Task list
 ### Webpack
 
-- [ ] Webpack server not hot reloading after code changes
+- [x] Webpack server not hot reloading after code changes
 - [x] Bundle size to big
 - [ ] Material UI Theme
-- [ ] Performance tweaks
-- [ ] Separate production config
+- [x] Performance tweaks
+- [x] Separate production config
 
 ### Project setup
 - [x] Eslint
