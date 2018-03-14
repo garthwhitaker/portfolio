@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header it renders correctly 1`] = `
+<div>
+  <div
+    className="MuiGrid-typeContainer-6 MuiGrid-spacing-xs-16-28"
+  >
+    <div
+      className="MuiGrid-typeItem-7 MuiGrid-grid-xs-12-43 Header-row-1"
+    >
+      <div
+        className="MuiAvatar-root-96 Header-profile-2"
+      >
+        <img
+          alt="Profile photo"
+          className="MuiAvatar-img-98"
+          sizes={undefined}
+          src="test-file-stub"
+          srcSet={undefined}
+        />
+      </div>
+    </div>
+    <div
+      className="MuiGrid-typeItem-7 MuiGrid-grid-xs-12-43 Header-row-1"
+    >
+      <h1
+        className="Header-h1-4"
+      >
+        GARTH WHITAKER
+      </h1>
+    </div>
+    <div
+      className="MuiGrid-typeItem-7 MuiGrid-grid-xs-12-43 Header-row-1"
+    >
+      <h4
+        className="Header-h4-5"
+      >
+        A craftsman using technology to enable people and business.
+      </h4>
+    </div>
+  </div>
+  <hr
+    className="Header-divider-3"
+  />
+</div>
+`;

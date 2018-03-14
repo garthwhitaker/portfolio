@@ -4,7 +4,7 @@
   "description": "This is my portfolio project ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack -d",
     "build:production": "webpack -p --config ./webpack.prod.js",
     "build:watch": "webpack -d --watch",
@@ -16,19 +16,23 @@
   "author": "Garth Whitaker",
   "license": "ISC",
   "dependencies": {
+    "babel-jest": "^22.4.1",
     "babel-preset-es2016": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint-plugin-jest": "^21.14.1",
+    "html-webpack-plugin": "^3.0.4",
     "material-ui": "^1.0.0-beta.34",
     "material-ui-icons": "^1.0.0-beta.17",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "webpack": "^3.11.0",
-    "html-webpack-plugin": "^3.0.4",
     "webpack-bundle-analyzer": "^2.11.1",
-    "webpack-merge": "^4.1.2",
-    "clean-webpack-plugin": "^0.1.18",
-    "webpack-dashboard": "^1.1.1"
+    "webpack-dashboard": "^1.1.1",
+    "webpack-merge": "^4.1.2"
   },
   "private": true,
   "devDependencies": {
@@ -44,6 +48,8 @@
     "eslint-plugin-react": "^7.7.0",
     "file-loader": "^1.1.9",
     "image-webpack-loader": "^4.1.0",
+    "jest": "^22.4.2",
+    "react-test-renderer": "^16.2.0",
     "style-loader": "^0.20.2",
     "url-loader": "^0.6.2",
     "webpack-dev-server": "^2.11.1"
@@ -61,5 +67,15 @@
       "path": "./dist/index.html",
       "maxSize": "1 kB"
     }
-  ]
+  ],
+  "jest": {
+    "setupFiles": [
+      "./setupFile.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
+        "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
 }

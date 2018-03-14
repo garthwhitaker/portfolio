@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer it renders correctly 1`] = `
+<div>
+  <hr
+    className="Footer-divider-2"
+  />
+  <div
+    className="MuiGrid-typeContainer-3 MuiGrid-spacing-xs-16-25"
+  >
+    <div
+      className="MuiGrid-typeItem-4 MuiGrid-grid-xs-12-40 Footer-row-1"
+    >
+      © Copyright 2018 Garth Whitaker
+    </div>
+  </div>
+</div>
+`;

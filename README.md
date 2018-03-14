@@ -15,7 +15,7 @@ This is my portfolio site written with React
 - [ ] Lighthouse
 - [ ] Git hook for push
 - [ ] Docker local deploy
-- [ ] Jest 
-- [ ] Enzyme
+- [x] Jest 
+- [x] Enzyme
 - [ ] Deploy to amazon via script
 - [ ] Deploy to digital ocean via script

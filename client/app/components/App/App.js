@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from 'material-ui/Grid';
 import withStyles from 'material-ui/styles/withStyles';
 import PropTypes from 'prop-types';
-import Header from './Header/Header';
-import Content from './Content/Content';
-import Footer from './Footer/Footer';
+import Header from './../Header/Header';
+import Content from './../Content/Content';
+import Footer from './../Footer/Footer';
 
 const styles = {
   root: {
