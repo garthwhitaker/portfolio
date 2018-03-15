@@ -2,8 +2,8 @@ import React from 'react';
 import Grid from 'material-ui/Grid';
 import withStyles from 'material-ui/styles/withStyles';
 import PropTypes from 'prop-types';
-import Header from './../Header/Header';
-import Content from './../Content/Content';
+import Header from './../Header';
+import Content from './../Content';
 import Footer from './../Footer';
 
 const styles = {
