@@ -11,7 +11,10 @@
     "start": "webpack-dashboard -- webpack-dev-server",
     "eslint": "eslint client/app",
     "eslint:fix": "eslint --fix .",
-    "test:bundlesize": "bundlesize"
+    "test:bundlesize": "bundlesize",
+    "docker:build": "docker build -t portfolio .",
+    "docker:deploy": "docker run --name portfolio-instance -p 80:80 -d portfolio",
+    "docker:destroy": "docker stop portfolio-instance && docker rm portfolio-instance && docker rmi portfolio"
   },
   "author": "Garth Whitaker",
   "license": "ISC",
