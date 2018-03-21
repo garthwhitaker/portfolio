@@ -16,5 +16,5 @@ This is my portfolio site written with React
 - [x] Docker local deploy
 - [x] Jest 
 - [x] Enzyme
-- [] Deploy to amazon via script
+- [ ] Deploy to amazon via script
 - [ ] Deploy to digital ocean via script
