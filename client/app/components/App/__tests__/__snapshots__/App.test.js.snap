@@ -148,13 +148,13 @@ exports[`App it renders correctly 1`] = `
     </div>
     <div>
       <hr
-        className="Footer-divider-112"
+        className="Footer-divider-111"
       />
       <div
         className="MuiGrid-typeContainer-3 MuiGrid-spacing-xs-16-25"
       >
         <div
-          className="MuiGrid-typeItem-4 MuiGrid-grid-xs-12-40 Footer-row-111"
+          className="MuiGrid-typeItem-4 MuiGrid-grid-xs-12-40 Footer-row-110"
         >
           © Copyright 2018 Garth Whitaker
         </div>
