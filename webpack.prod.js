@@ -3,8 +3,6 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const common = require('./webpack.common');
 
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-
 module.exports = merge(common, {
 
   plugins: [
@@ -18,6 +16,5 @@ module.exports = merge(common, {
       minChunks: module => module.context &&
           module.context.includes('node_modules'),
     }),
-    new BundleAnalyzerPlugin(),
   ],
 });
