@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This is my portfolio project ",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "test": "jest",
     "build": "webpack -d",

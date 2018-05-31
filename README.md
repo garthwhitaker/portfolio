@@ -8,6 +8,7 @@ This is my portfolio site written with React
 - [x] Bundle size to big
 - [x] Performance tweaks
 - [x] Separate production config
+- [x] Remove external call for font, load locally 
 
 ### Project setup
 - [x] Eslint
@@ -16,5 +17,3 @@ This is my portfolio site written with React
 - [x] Docker local deploy
 - [x] Jest 
 - [x] Enzyme
-- [ ] Deploy to amazon via script
-- [ ] Deploy to digital ocean via script

@@ -38,6 +38,19 @@ module.exports = {
         ],
       },
       {
+        test: /\.ttf$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+            // Output below fonts directory
+              name: './fonts/[name].[ext]',
+            },
+          },
+        ],
+      },
+
+      {
         test: /\.(jpe?g|png|gif|svg)$/,
         loader: 'image-webpack-loader',
         // Specify enforce: 'pre' to apply the loader
@@ -51,6 +64,7 @@ module.exports = {
     new CleanWebpackPlugin(BUILD_DIR),
     new HtmlWebpackPlugin({
       template: './client/index.html',
+      favicon: './client/public/images/favicon.ico',
     }),
     new DashboardPlugin(),
   ],
