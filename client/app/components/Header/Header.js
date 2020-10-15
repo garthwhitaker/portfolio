@@ -1,14 +1,14 @@
-import React from 'react';
-import Avatar from 'material-ui/Avatar';
-import Grid from 'material-ui/Grid';
-import withStyles from 'material-ui/styles/withStyles';
-import PropTypes from 'prop-types';
-import profileImage from './../../../public/images/profile.jpeg';
+import React from "react";
+import Avatar from "@material-ui/icons/Person";
+import Grid from "@material-ui/core/Grid";
+import withStyles from "@material-ui/core/styles/withStyles";
+import PropTypes from "prop-types";
+import profileImage from "../../../public/images/profile.jpeg";
 
 const styles = {
   row: {
-    display: 'flex',
-    justifyContent: 'center',
+    display: "flex",
+    justifyContent: "center",
   },
   profile: {
     margin: 5,
@@ -16,24 +16,24 @@ const styles = {
     height: 150,
   },
   divider: {
-    marginTop: '1rem',
-    marginBottom: '1rem',
+    marginTop: "1rem",
+    marginBottom: "1rem",
     border: 0,
-    borderTop: '1px solid rgba(0,0,0,.1)',
+    borderTop: "1px solid rgba(0,0,0,.1)",
   },
   h1: {
-    fontSize: '2.5rem',
+    fontSize: "2.5rem",
     margin: 0,
-    textAlign: 'center',
+    textAlign: "center",
   },
   h4: {
-    color: '#666',
-    paddingBottom: '20px',
+    color: "#666",
+    paddingBottom: "20px",
     fontFamily: '"Open Sans", sans-serif',
-    fontSize: '1.5rem',
-    textAlign: 'center',
+    fontSize: "1.5rem",
+    textAlign: "center",
     marginTop: 0,
-    marginBottom: '0.5rem',
+    marginBottom: "0.5rem",
   },
 };
 

@@ -1,28 +1,28 @@
-import React from 'react';
-import Grid from 'material-ui/Grid';
-import withStyles from 'material-ui/styles/withStyles';
-import PropTypes from 'prop-types';
+import React from "react";
+import Grid from "@material-ui/core/Grid";
+import withStyles from "@material-ui/styles/withStyles";
+import PropTypes from "prop-types";
 
 const styles = {
   row: {
-    display: 'flex',
-    justifyContent: 'center',
+    display: "flex",
+    justifyContent: "center",
     fontFamily: '"Open Sans", sans-serif',
   },
   divider: {
-    marginTop: '1rem',
-    marginBottom: '1rem',
+    marginTop: "1rem",
+    marginBottom: "1rem",
     border: 0,
-    borderTop: '1px solid rgba(0,0,0,.1)',
+    borderTop: "1px solid rgba(0,0,0,.1)",
   },
 };
 
-const Footer = props => (
+const Footer = ({ classes: { divider, row } }) => (
   <div>
-    <hr className={props.classes.divider} />
+    <hr className={divider} />
     <Grid container>
-      <Grid className={props.classes.row} item xs={12}>
-          &copy; Copyright 2018 Garth Whitaker
+      <Grid className={row} item xs={12}>
+        &copy; Copyright 2018 Garth Whitaker
       </Grid>
     </Grid>
   </div>
