@@ -3,25 +3,27 @@
 exports[`Header it renders correctly 1`] = `
 <div>
   <div
-    className="MuiGrid-typeContainer-6 MuiGrid-spacing-xs-16-28"
+    className="MuiGrid-root MuiGrid-container"
   >
     <div
-      className="MuiGrid-typeItem-7 MuiGrid-grid-xs-12-43 Header-row-1"
+      className="MuiGrid-root Header-row-1 MuiGrid-item MuiGrid-grid-xs-12"
     >
-      <div
-        className="MuiAvatar-root-96 Header-profile-2"
+      <svg
+        alt="Profile photo"
+        aria-hidden="true"
+        className="MuiSvgIcon-root Header-profile-2"
+        focusable="false"
+        role="presentation"
+        src="test-file-stub"
+        viewBox="0 0 24 24"
       >
-        <img
-          alt="Profile photo"
-          className="MuiAvatar-img-98"
-          sizes={undefined}
-          src="test-file-stub"
-          srcSet={undefined}
+        <path
+          d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"
         />
-      </div>
+      </svg>
     </div>
     <div
-      className="MuiGrid-typeItem-7 MuiGrid-grid-xs-12-43 Header-row-1"
+      className="MuiGrid-root Header-row-1 MuiGrid-item MuiGrid-grid-xs-12"
     >
       <h1
         className="Header-h1-4"
@@ -30,7 +32,7 @@ exports[`Header it renders correctly 1`] = `
       </h1>
     </div>
     <div
-      className="MuiGrid-typeItem-7 MuiGrid-grid-xs-12-43 Header-row-1"
+      className="MuiGrid-root Header-row-1 MuiGrid-item MuiGrid-grid-xs-12"
     >
       <h4
         className="Header-h4-5"

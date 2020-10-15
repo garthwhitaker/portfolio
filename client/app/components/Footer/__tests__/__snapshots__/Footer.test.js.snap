@@ -6,10 +6,10 @@ exports[`Footer it renders correctly 1`] = `
     className="Footer-divider-2"
   />
   <div
-    className="MuiGrid-typeContainer-3 MuiGrid-spacing-xs-16-25"
+    className="MuiGrid-root MuiGrid-container"
   >
     <div
-      className="MuiGrid-typeItem-4 MuiGrid-grid-xs-12-40 Footer-row-1"
+      className="MuiGrid-root Footer-row-1 MuiGrid-item MuiGrid-grid-xs-12"
     >
       © Copyright 2018 Garth Whitaker
     </div>

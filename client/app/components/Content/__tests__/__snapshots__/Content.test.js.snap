@@ -2,19 +2,19 @@
 
 exports[`Content it renders correctly 1`] = `
 <div
-  className="MuiGrid-typeContainer-4 MuiGrid-spacing-xs-16-26"
+  className="MuiGrid-root MuiGrid-container"
 >
   <div
-    className="MuiGrid-typeContainer-4 MuiGrid-spacing-xs-16-26 MuiGrid-align-items-xs-center-12 MuiGrid-justify-xs-center-21 Content-row-2"
+    className="MuiGrid-root Content-row-2 MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
   >
     <div
-      className="MuiGrid-typeItem-5 MuiGrid-grid-xs-12-41 MuiGrid-grid-sm-4-46 MuiGrid-grid-md-2-57"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-2"
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root-94 Content-icon-1"
-        color={undefined}
+        className="MuiSvgIcon-root Content-icon-1"
         focusable="false"
+        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -23,7 +23,7 @@ exports[`Content it renders correctly 1`] = `
       </svg>
     </div>
     <div
-      className="MuiGrid-typeItem-5 MuiGrid-grid-xs-12-41 MuiGrid-grid-sm-8-50 MuiGrid-grid-md-10-65 Content-item-3"
+      className="MuiGrid-root Content-item-3 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8 MuiGrid-grid-md-10"
     >
       For things I am currently working on or have worked on, check 
       <a
@@ -31,20 +31,19 @@ exports[`Content it renders correctly 1`] = `
       >
         GitHub
       </a>
-      .
     </div>
   </div>
   <div
-    className="MuiGrid-typeContainer-4 MuiGrid-spacing-xs-16-26 MuiGrid-align-items-xs-center-12 MuiGrid-justify-xs-center-21 Content-row-2"
+    className="MuiGrid-root Content-row-2 MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
   >
     <div
-      className="MuiGrid-typeItem-5 MuiGrid-grid-xs-12-41 MuiGrid-grid-sm-4-46 MuiGrid-grid-md-2-57"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-2"
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root-94 Content-icon-1"
-        color={undefined}
+        className="MuiSvgIcon-root Content-icon-1"
         focusable="false"
+        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -53,7 +52,7 @@ exports[`Content it renders correctly 1`] = `
       </svg>
     </div>
     <div
-      className="MuiGrid-typeItem-5 MuiGrid-grid-xs-12-41 MuiGrid-grid-sm-8-50 MuiGrid-grid-md-10-65 Content-item-3"
+      className="MuiGrid-root Content-item-3 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8 MuiGrid-grid-md-10"
     >
       To read my latest blog posts, see 
       <a
@@ -61,20 +60,19 @@ exports[`Content it renders correctly 1`] = `
       >
         Blog
       </a>
-      .
     </div>
   </div>
   <div
-    className="MuiGrid-typeContainer-4 MuiGrid-spacing-xs-16-26 MuiGrid-align-items-xs-center-12 MuiGrid-justify-xs-center-21 Content-row-2"
+    className="MuiGrid-root Content-row-2 MuiGrid-container MuiGrid-align-items-xs-center MuiGrid-justify-xs-center"
   >
     <div
-      className="MuiGrid-typeItem-5 MuiGrid-grid-xs-12-41 MuiGrid-grid-sm-4-46 MuiGrid-grid-md-2-57"
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-4 MuiGrid-grid-md-2"
     >
       <svg
         aria-hidden="true"
-        className="MuiSvgIcon-root-94 Content-icon-1"
-        color={undefined}
+        className="MuiSvgIcon-root Content-icon-1"
         focusable="false"
+        role="presentation"
         viewBox="0 0 24 24"
       >
         <path
@@ -83,7 +81,7 @@ exports[`Content it renders correctly 1`] = `
       </svg>
     </div>
     <div
-      className="MuiGrid-typeItem-5 MuiGrid-grid-xs-12-41 MuiGrid-grid-sm-8-50 MuiGrid-grid-md-10-65 Content-item-3"
+      className="MuiGrid-root Content-item-3 MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8 MuiGrid-grid-md-10"
     >
       My professional career in IT can be viewed on 
       <a
@@ -91,7 +89,6 @@ exports[`Content it renders correctly 1`] = `
       >
         LinkedIn
       </a>
-      .
     </div>
   </div>
 </div>
