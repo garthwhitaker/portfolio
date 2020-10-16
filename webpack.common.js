@@ -1,10 +1,10 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
-const DashboardPlugin = require('webpack-dashboard/plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const DashboardPlugin = require("webpack-dashboard/plugin");
 
-const APP_DIR = path.resolve(__dirname, 'client/app');
-const BUILD_DIR = path.resolve(__dirname, 'dist');
+const APP_DIR = path.resolve(__dirname, "client/app");
+const BUILD_DIR = path.resolve(__dirname, "dist");
 
 module.exports = {
   entry: {
@@ -12,25 +12,43 @@ module.exports = {
   },
   output: {
     path: BUILD_DIR,
-    filename: '[name].[chunkhash].js',
+    filename: "[name].[chunkhash].js",
+  },
+  resolve: {
+    // changed from extensions: [".js", ".jsx"]
+    extensions: [".ts", ".tsx", ".js", ".jsx"],
   },
   module: {
     rules: [
+      // {
+      //   test: /\.js$/,
+      //   exclude: /node_modules/,
+      //   include: APP_DIR,
+      //   loader: "babel-loader",
+      // },
+      // changed from { test: /\.jsx?$/, use: { loader: 'babel-loader' }, exclude: /node_modules/ },
       {
+        test: /\.(t|j)sx?$/,
+        use: { loader: "ts-loader" },
+        exclude: /node_modules/,
+      },
+
+      // addition - add source-map support
+      {
+        enforce: "pre",
         test: /\.js$/,
         exclude: /node_modules/,
-        include: APP_DIR,
-        loader: 'babel-loader',
+        loader: "source-map-loader",
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpe?g|gif)$/,
         use: [
           {
-            loader: 'url-loader',
+            loader: "url-loader",
             options: {
               limit: 10 * 1024,
             },
@@ -41,10 +59,10 @@ module.exports = {
         test: /\.ttf$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-            // Output below fonts directory
-              name: './fonts/[name].[ext]',
+              // Output below fonts directory
+              name: "./fonts/[name].[ext]",
             },
           },
         ],
@@ -52,20 +70,26 @@ module.exports = {
 
       {
         test: /\.(jpe?g|png|gif|svg)$/,
-        loader: 'image-webpack-loader',
+        loader: "image-webpack-loader",
         // Specify enforce: 'pre' to apply the loader
         // before url-loader/svg-url-loader
         // and not duplicate it in rules with them
-        enforce: 'pre',
+        enforce: "pre",
       },
     ],
   },
   plugins: [
     new CleanWebpackPlugin(BUILD_DIR),
     new HtmlWebpackPlugin({
-      template: './client/index.html',
-      favicon: './client/public/images/favicon.ico',
+      template: "./client/index.html",
+      favicon: "./client/public/images/favicon.ico",
     }),
     new DashboardPlugin(),
   ],
+  externals: {
+    // causing issues when trying to run the application with webpack-dev-server
+    // or serving index.html
+    // react: "React",
+    // "react-dom": "ReactDOM",
+  },
 };
