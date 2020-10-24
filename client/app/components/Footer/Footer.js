@@ -22,7 +22,7 @@ const Footer = ({ classes: { divider, row } }) => (
     <hr className={divider} />
     <Grid container>
       <Grid className={row} item xs={12}>
-        &copy; Copyright 2018 Garth Whitaker
+        &copy; Copyright 2020 Garth Whitaker
       </Grid>
     </Grid>
   </div>
