@@ -49,9 +49,9 @@ const Content = ({ classes: { row, icon, item } }) => (
       justify="center"
       className={row}
     >
-      <Grid item xs={12} sm={4} md={2}>
+      {/* <Grid item xs={12} sm={4} md={2}>
         <AssigmentIcon className={icon} />
-      </Grid>
+      </Grid> */}
 
       {/* <Grid item xs={12} sm={8} md={10} className={item}>
         To read my latest blog posts, see&nbsp;
