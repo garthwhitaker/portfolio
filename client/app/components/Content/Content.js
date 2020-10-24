@@ -1,10 +1,12 @@
 import React from "react";
-import LaptopMacIcon from "@material-ui/icons/LaptopMac";
+import GitHubIcon from "@material-ui/icons/GitHub";
 import AssigmentIcon from "@material-ui/icons/Assignment";
-import PermIdentityIcon from "@material-ui/icons/PermIdentity";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Grid from "@material-ui/core/Grid";
 import withStyles from "@material-ui/core/styles/withStyles";
 import PropTypes from "prop-types";
+// eslint-disable-next-line import/no-unresolved
+// import { Books } from "../typescript/Books/Books";
 
 const styles = {
   icon: {
@@ -33,7 +35,7 @@ const Content = ({ classes: { row, icon, item } }) => (
       className={row}
     >
       <Grid item xs={12} sm={4} md={2}>
-        <LaptopMacIcon className={icon} />
+        <GitHubIcon className={icon} />
       </Grid>
       <Grid item xs={12} sm={8} md={10} className={item}>
         For things I am currently working on or have worked on, check&nbsp;
@@ -50,6 +52,7 @@ const Content = ({ classes: { row, icon, item } }) => (
       <Grid item xs={12} sm={4} md={2}>
         <AssigmentIcon className={icon} />
       </Grid>
+
       <Grid item xs={12} sm={8} md={10} className={item}>
         To read my latest blog posts, see&nbsp;
         <a href="http://www.garthwhitaker.co.za/blog">Blog</a>
@@ -63,12 +66,21 @@ const Content = ({ classes: { row, icon, item } }) => (
       className={row}
     >
       <Grid item xs={12} sm={4} md={2}>
-        <PermIdentityIcon className={icon} />
+        <LinkedInIcon className={icon} />
       </Grid>
       <Grid item xs={12} sm={8} md={10} className={item}>
         My professional career in IT can be viewed on&nbsp;
         <a href="https://www.linkedin.com/in/garthwhitaker">LinkedIn</a>
       </Grid>
+    </Grid>
+    <Grid
+      container
+      alignItems="flex-start"
+      direction="row"
+      justify="center"
+      className={row}
+    >
+      {/* <Books /> */}
     </Grid>
   </Grid>
 );
