@@ -1,9 +1,10 @@
 import React from "react";
-import Avatar from "@material-ui/icons/Person";
+import Avatar from "@material-ui/core/Avatar";
 import Grid from "@material-ui/core/Grid";
 import withStyles from "@material-ui/core/styles/withStyles";
 import PropTypes from "prop-types";
-import profileImage from "../../../public/images/profile.jpeg";
+// import profileImage from "../../../public/images/profile.jpeg";
+import profileImage from "../../../public/images/profile-lnkedin.jpeg";
 
 const styles = {
   row: {
@@ -44,10 +45,12 @@ const Header = (props) => {
       <Grid container>
         <Grid className={classes.row} item xs={12}>
           <Avatar
-            alt="Profile photo"
             src={profileImage}
             className={classes.profile}
-          />
+            alt="Garth Whitaker"
+          >
+            G
+          </Avatar>
         </Grid>
         <Grid className={classes.row} item xs={12}>
           <h1 className={classes.h1}>GARTH WHITAKER</h1>
