@@ -53,10 +53,10 @@ const Content = ({ classes: { row, icon, item } }) => (
         <AssigmentIcon className={icon} />
       </Grid>
 
-      <Grid item xs={12} sm={8} md={10} className={item}>
+      {/* <Grid item xs={12} sm={8} md={10} className={item}>
         To read my latest blog posts, see&nbsp;
         <a href="http://www.garthwhitaker.co.za/blog">Blog</a>
-      </Grid>
+      </Grid> */}
     </Grid>
     <Grid
       container
