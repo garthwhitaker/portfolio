@@ -15,23 +15,12 @@ module.exports = {
     filename: "[name].[chunkhash].js",
   },
   resolve: {
-    // changed from extensions: [".js", ".jsx"]
-    extensions: [".ts", ".tsx", ".js", ".jsx"],
+    extensions: [".js", ".jsx"]
   },
   module: {
     rules: [
-      // {
-      //   test: /\.js$/,
-      //   exclude: /node_modules/,
-      //   include: APP_DIR,
-      //   loader: "babel-loader",
-      // },
-      // changed from { test: /\.jsx?$/, use: { loader: 'babel-loader' }, exclude: /node_modules/ },
-      {
-        test: /\.(t|j)sx?$/,
-        use: { loader: "ts-loader" },
-        exclude: /node_modules/,
-      },
+     
+     { test: /\.jsx?$/, use: { loader: 'babel-loader' }, exclude: /node_modules/ },
 
       // addition - add source-map support
       {
